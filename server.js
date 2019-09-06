@@ -6,6 +6,9 @@ function start(route, routes) {
         route(url.parse(req.url).pathname, routes, req, res);
     });
     server.listen(8888);
+
+    console.log("ouvindo porta");
+    
 }
 
 exports.start = start;
